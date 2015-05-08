@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<title>Bootstrap 101 Template</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+<title>js-mindmap demo - JavaScript Mindmap</title>
+<!-- You may need this if not already in your web page for IE support -->
+
+<link href="css/mindmap.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+<div class="container"> 
+  
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar"> <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+        <a class="navbar-brand" href="http://www.northeaststate.edu/workforcesolutions/">Workforce Solutions Home Page</a> </div>
+      <form class="navbar-form navbar-left" role="search" action="http://www.northeaststate.edu/search.aspx" method="get">
+        <div class="form-group">
+          <input type="text" class="form-control" id="searchText" name="searchText" placeholder="Search">
+        </div>
+        <button type="submit" class="btn btn-default">Search Northeast State</button>
+      </form>
+    </div>
+    <!--/.container-fluid --> 
+  </nav>
+  <div class="col-lg-12"> 
+    <!-- 
+    -- From here, all this HTML is required
+    -- Place this code in where you are wanting this to display
+    -->
+    <div id="wrapper">
+      <div class="row">
+        <div id="mindmap-container"></div>
+      </div>
+      <div class="row">
+        <div id="map-canvas">Loading Map...</div>
+      </div>
+    </div>
+    
+    <!-- required dependiences --> 
+    <!-- jQuery This can be removed if jquery 1.6+ already loaded --> 
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script> 
+    <!--
+    -- Do note, you will need to change the api key to match your's, 
+    -- as this API key will be deactivated! 
+    -- AIzaSyDWzhyWLip4dh6WUUJmuunvpeiJgaFplMo
+    -- AIzaSyD6_qRzcfXY4P_whcp9uda-SHBHgtL5y_0
+    --> 
+    
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWzhyWLip4dh6WUUJmuunvpeiJgaFplMo">
+    </script> 
+    <script type="text/javascript" src="js/lib/arbor.js"></script> 
+    <script type="text/javascript" src="js/lib/kinetic5.1.0.min.js"></script> 
+    <script type="text/javascript" src="js/lib/fusiontips_compiled.js"></script> 
+    <!-- This script is what puts everything togather --> 
+    <script type="text/javascript" src="js/mindmap.js" ></script> 
+    
+    <!-- End Copying here --> 
+  </div>
+</div>
+<!-- /container --> 
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</body>
+</html>

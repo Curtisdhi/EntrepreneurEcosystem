@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>js-mindmap demo - JavaScript Mindmap</title>
+    <!-- You may need this if not already in your web page for IE support -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link href="css/mindmap.css" type="text/css" rel="stylesheet"/>
+</head>
+<body>
+    <!-- 
+    -- From here, all this HTML is required
+    -- Place this code in where you are wanting this to display
+    -->
+    <div id="wrapper">
+        <div class="row">
+            <div id="mindmap-container"></div>
+        </div>
+        <div class="row">
+            <div id="map-canvas">Loading Map...</div>
+        </div>
+    </div>
+    
+    <!-- required dependiences -->
+    <!-- jQuery This can be removed if jquery 1.6+ already loaded -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js" type="text/javascript"></script>
+    <!--
+    -- Do note, you will need to change the api key to match your's, 
+    -- as this API key will be deactivated! 
+    -->
+    <script type="text/javascript"
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDWzhyWLip4dh6WUUJmuunvpeiJgaFplMo">
+    </script>
+    
+    <script type="text/javascript" src="js/lib/arbor.js"></script>
+    <script type="text/javascript" src="js/lib/kinetic5.1.0.min.js"></script>
+    
+    <script type="text/javascript" src="js/lib/fusiontips_compiled.js"></script>
+    <!-- This script is what puts everything togather -->
+    <script type="text/javascript" src="js/mindmap.js" ></script>
+    
+    <!-- End Copying here -->
+</body>
+</html>
